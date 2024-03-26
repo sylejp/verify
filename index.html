@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificação</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4e0069, #000000);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .verification-container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    max-width: 80%;
+    width: 400px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6a0080;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+  }
+
+  button:hover {
+    background-color: #8c1aff;
+  }
+
+  .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .verification-container {
+      padding: 20px;
+      width: 90%;
+    }
+
+    button {
+      max-width: none;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="overlay">
+  <div class="verification-container">
+    <p>REDE JKP</p>
+    <h1>Verificação</h1>
+    <button id="verifyBtn">Verify</button>
+    <p class="copyright">&#169; 2024 Todos os direitos reservados</p>
+  </div>
+</div>
+
+<script>
+  document.getElementById('verifyBtn').addEventListener('click', function() {
+    alert('Verificação realizada!');
+  });
+</script>
+</body>
+</html>
